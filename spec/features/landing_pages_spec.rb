@@ -14,6 +14,8 @@ RSpec.feature "LandingPages", type: :feature do
         expect(page).to have_content("Time")
         expect(page).to have_content("Phone")
       end
+    Steps 'go to owner page'
+    
     end
   end
 end
