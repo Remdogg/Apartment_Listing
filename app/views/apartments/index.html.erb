@@ -31,7 +31,7 @@
             <td><%= apartment.postal_code %></td>
             <td><%= apartment.state %></td>
             <td><%= apartment.country %></td>
-            <td><%= apartment.owner.name %></td>
+            <td><a href='owners/<%=apartment.owner_id%>'><%= apartment.owner.name %></a></td>
             <td><%= link_to 'Show', apartment %></td>
         <td><%= link_to 'Edit', edit_apartment_path(apartment) %></td>
         <td><%= link_to 'Destroy', apartment, method: :delete, data: { confirm: 'Are you sure?' } %></td>

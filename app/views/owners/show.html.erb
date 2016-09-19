@@ -20,4 +20,14 @@
   <dt>Phone:</dt>
   <dd><%= @owner.phone %></dd>
 
+  <p>
+  <ul>
+    <% @owner.apartments.each do |apartment| %>
+        <li>
+            <%= apartment.address1 %> <%= apartment.address2 %> <%= apartment.city %> <%= apartment.postal_code %> <%= apartment.state %> <%= apartment.country %>
+         </li>
+    <% end %>
+  </ul>
+</p>
+
 </dl>
